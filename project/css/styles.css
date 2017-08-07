@@ -1,0 +1,294 @@
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+   }
+
+body{
+  font-family: 'Libre Franklin', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align:center;
+  width:100%;
+  background-color:aliceblue;
+}
+
+a {
+  color: slategrey;
+  text-transform:uppercase;
+  text-decoration:none;
+}
+
+a:hover{
+  color:blue;
+}
+
+/*-------------Navigation */
+
+.name{
+  font-family: "Acme", sans-serif;
+  font-size: 60px;
+}
+
+ul{
+  padding:0;
+  margin:0;
+}
+
+li{
+  list-style: none;
+  padding:2em;
+  margin:0;
+}
+
+
+/*-------------header */
+
+.profile-pic{
+  width:60%;
+  border: 10px solid lightblue
+}
+
+/*-------------content */
+
+.main-content, 
+img, 
+header{
+  width:90%;
+  margin:auto;
+  padding:0;
+}
+
+h1, h2{
+  font-size: 2em;
+  font-weight:bold;
+}
+
+h3{
+  font-size: 2em;
+}
+
+p{
+  font-size:1.3em;
+}
+
+.marketing, 
+.search,
+.travel,
+.fav-spots,
+.photogallery,
+.calculator{
+  margin:8rem 0;
+}
+
+.skils{
+  display:inline-block;
+  margin:auto;
+  
+ }
+
+.skill-item{
+  color:white;
+  background-color:darkblue;
+  border-radius:10%;
+  display:inline-block;
+  margin:auto;
+}
+
+.contact{
+  margin:10rem 0;
+}
+
+
+/*-------------footer */
+
+
+.footer{
+  padding-top: 60px;
+  padding-bottom:60px;
+  border-top: 2px solid slategrey;
+  overflow:hidden;
+  width:98%;
+  margin:auto;
+}
+
+.wide-nav{
+  display:none;
+}
+
+.foot-navigation{
+  float:right;
+  display:inline-block;
+  margin:0;
+  padding:0;
+  font-size: 1.5rem;
+}
+
+.foot-name{
+  float: left;
+  padding:0;
+  display:inline;
+  margin:0;
+  padding:0;
+  font-size: 1rem;
+  color: slategrey;
+}
+
+.foot-nav{
+  display:inline;
+  font-size: 1rem;
+}
+
+/*-------------media quieries*/
+
+@media (min-width: 768px) {
+
+body{
+  width:90%;
+  margin:auto;
+}
+ 
+.main-content{
+  width:90%;
+  margin:auto;
+}
+
+
+.profile-pic {
+  float:right;
+  width: 45%
+}
+
+.main-nav{
+  padding:10%;
+  overflow:auto;
+  padding-bottom:100px;
+}
+
+li{
+  display:inline-block;
+  margin:0;
+  padding:10px;
+  font-size: 1.5rem;
+  }
+
+
+
+nav{
+  overflow:auto;
+}
+
+.intro{
+  text-align:left;
+}
+/*----------main content*/
+
+h1,h2{
+  font-size:3em;
+}
+
+p{
+  font-size:1.5em;
+}
+  
+.main-content{
+  overflow:auto;
+}
+  .marketing, 
+  .search,
+  .travel,
+  .fav-spots,
+  .photogallery,
+  .calculator{
+  width: 45%;
+}
+
+  .search,
+  .fav-spots,
+  .calculator{
+  float: right;
+}
+  .marketing, 
+  .travel,
+  .photogallery{
+  float: left;
+}
+
+.contact {
+    width:60%;
+    margin: auto;
+  }
+
+
+/*----------footer*/
+
+#top{
+  display:none;
+}
+
+.wide-nav{
+  display:inline;
+  font-size:1em;
+}
+}
+
+@media (min-width: 1024px) {
+
+/*----------header*/
+
+.name{
+  float: left;
+  padding:0;
+  display:inline;
+  margin:0;
+  padding:0;
+  font-size: 3rem;
+  }
+
+nav{
+  display:inline;
+  float:right;
+}
+
+.profile-pic{
+  width:40%;
+}
+
+.main-nav{
+  padding: 50px 0;
+}
+  .main-content{
+    overflow:auto;
+    width:90%;
+    margin:auto;
+  }
+
+/*----------main content*/
+  
+  .marketing, 
+  .fav-spots{
+  float: left;
+  width: 33%;
+  }
+  
+  .travel,
+  .calculator{
+  float:right;
+  width: 33%;
+  }
+  
+  .search, 
+  .photogallery{
+  display: inline-block; 
+  width: 33%;
+  }
+
+/*----------contact*/
+
+  .contact {
+    width:50%;
+    margin:auto;
+  }
+}
+
+ 
+
